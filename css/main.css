@@ -1,0 +1,195 @@
+/* ===== NAM HÀ SỨC KHỎE CHỦ ĐỘNG — main.css ===== */
+/* Global styles, variables, reset, typography, utilities */
+
+/* ── CSS Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ── CSS Variables ── */
+:root {
+  /* Primary — Xanh lam thương hiệu */
+  --color-primary:       #39afd5;
+  --color-primary-light: #5FC7E6;
+  --color-primary-dark:  #1A8DB3;
+
+  /* Accent — Vàng ấm */
+  --color-accent:        #F5A623;
+  --color-accent-soft:   #FFF8E7;
+
+  /* Neutral */
+  --color-bg:            #FAFAF9;
+  --color-surface:       #FFFFFF;
+  --color-text-primary:  #1A1A1A;
+  --color-text-secondary:#4B5563;
+  --color-text-muted:    #9CA3AF;
+  --color-border:        #E5E7EB;
+
+  /* Gradient */
+  --gradient-hero: linear-gradient(135deg, #0F7DA3 0%, #39afd5 50%, #5FC7E6 100%);
+  --gradient-card: linear-gradient(180deg, rgba(57,175,213,0.05) 0%, transparent 100%);
+}
+
+/* ── Typography ── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-text-primary);
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); letter-spacing: -0.02em; }
+h2 { font-size: clamp(1.5rem, 3.5vw, 2.25rem); letter-spacing: -0.01em; }
+h3 { font-size: clamp(1.15rem, 2vw, 1.5rem); }
+
+p { color: var(--color-text-secondary); }
+
+/* ── Focus styles for accessibility ── */
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.btn:focus-visible {
+  outline-offset: 2px;
+}
+
+/* ── Utilities ── */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.section__title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.section__desc {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 48px;
+  color: var(--color-text-secondary);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Skip Link ── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-primary);
+  color: #fff;
+  padding: 8px 24px;
+  border-radius: 0 0 8px 8px;
+  z-index: 1000;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ── Scroll Reveal Animations ── */
+[data-aos] {
+  opacity: 0;
+  transition: opacity 1.4s cubic-bezier(0.15, 0.85, 0.35, 1),
+              transform 1.4s cubic-bezier(0.15, 0.85, 0.35, 1);
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: none;
+}
+
+[data-aos="fade-up"] {
+  transform: translateY(80px);
+}
+
+[data-aos="fade-right"] {
+  transform: translateX(-70px);
+}
+
+[data-aos="fade-left"] {
+  transform: translateX(70px);
+}
+
+[data-aos="zoom-in"] {
+  transform: scale(0.7);
+}
+
+[data-aos="flip-left"] {
+  transform: perspective(600px) rotateY(20deg);
+  transform-origin: left center;
+}
+
+[data-aos="flip-left"].aos-animate {
+  transform: perspective(600px) rotateY(0);
+}
+
+/* ── prefers-reduced-motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 48px 0;
+  }
+
+  .section__desc {
+    margin-bottom: 32px;
+  }
+}

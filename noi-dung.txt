@@ -1,0 +1,314 @@
+# Nội Dung Website Nam Hà Sức Khỏe Chủ Động
+# ==============================================
+# Dùng để copy-paste vào file index.html
+# Giọng văn: ấm áp, gần gũi, truyền cảm hứng
+# Đối tượng: người Việt 30–70 tuổi, quan tâm sức khỏe
+
+────────────────────────────────────────────────────
+
+[SECTION: hero]
+
+  Tagline chính:
+  ──────────────
+  Sống Khỏe Mạnh – Bình An – Hạnh Phúc
+
+  Sub-headline (1 câu):
+  ─────────────────────
+  Hành trình chăm sóc sức khỏe chủ động dành cho mọi gia đình Việt — từ kiến thức thực chứng đến lối sống lành mạnh.
+
+  Button text (CTA chính):
+  ────────────────────────
+  Xem Video Ngay
+
+  Button text (phụ):
+  ──────────────────
+  Khám Phá Thêm
+
+────────────────────────────────────────────────────
+
+[SECTION: stats]
+
+  Lưu ý: đây là số liệu minh họa, có thể điều chỉnh theo số thực tế của kênh.
+
+  Stat 1
+  ──────
+  Số:   6+
+  Label: Năm Kinh Nghiệm
+
+  Stat 2
+  ──────
+  Số:   1.000.000+
+  Label: Người Theo Dõi
+
+  Stat 3
+  ──────
+  Số:   100%
+  Label: Nội Dung Miễn Phí
+
+  Stat 4
+  ──────
+  Số:   50.000.000+
+  Label: Lượt Xem
+
+────────────────────────────────────────────────────
+[SECTION: about]
+
+  Tiêu đề section:
+  ─────────────────
+  Về Nam Hà
+
+  Nội dung thân (khoảng 120 từ — 3 đoạn ngắn):
+  ───────────────────────────────────────────────
+  Đoạn 1:
+  Nam Hà là chuyên gia trong lĩnh vực Chăm Sóc Sức Khỏe Chủ Động với hơn 6 năm đồng hành cùng hàng chục ngàn gia đình Việt. Từ những ngày đầu tiên, điều thôi thúc Nam Hà không chỉ là kiến thức y học, mà là một khát vọng lớn hơn — giúp người Việt chủ động làm chủ sức khỏe của chính mình.
+
+  Đoạn 2:
+  "Việt Nam không còn ung thư" không chỉ là một khẩu hiệu, đó là sứ mệnh sống. Nam Hà tin rằng mỗi người đều có thể thay đổi cuộc đời mình khi có đúng kiến thức và một cộng đồng nâng đỡ. Tất cả nội dung được xây dựng dựa trên nghiên cứu thực chứng, dễ hiểu, dễ áp dụng cho mọi lứa tuổi.
+
+  Đoạn 3:
+  Hành trình còn dài, nhưng Nam Hà không đi một mình. Cùng với cộng đồng Sức Khỏe Chủ Động, chúng ta sẽ lan tỏa những giá trị tốt đẹp — để mỗi gia đình Việt đều có thể sống khỏe, sống bình an và sống hạnh phúc trọn vẹn.
+
+────────────────────────────────────────────────────
+
+[SECTION: values]
+
+  Tiêu đề section:
+  ─────────────────
+  Giá Trị Cốt Lõi
+
+  Mô tả đầu section (1 câu):
+  ──────────────────────────
+  Ba giá trị nền tảng dẫn dắt mọi nội dung và hoạt động của Nam Hà.
+
+  Card 1 — CHÂN (Truth)
+  ──────────────────────
+  Icon gợi ý:          <svg ngôi sao hoặc hình trái tim>
+  Tên giá trị:         Chân — Kiến Thức Thực Chứng
+  Mô tả (2–3 câu):    Mọi thông tin chia sẻ đều dựa trên nghiên cứu khoa học và tài liệu y khoa uy tín. Nam Hà cam kết chỉ nói những điều có căn cứ, giúp bạn an tâm từng bước trên hành trình chăm sóc sức khỏe.
+
+  Card 2 — THIỆN (Goodness)
+  ──────────────────────────
+  Icon gợi ý:          <svg bông hoa hoặc bàn tay>
+  Tên giá trị:         Thiện — Lan Tỏa Yêu Thương
+  Mô tả (2–3 câu):    Tất cả nội dung đều được chia sẻ miễn phí, xuất phát từ mong muốn chân thành giúp đỡ cộng đồng. Nam Hà tin rằng sức khỏe là quyền cơ bản của mỗi người, không ai bị bỏ lại phía sau.
+
+  Card 3 — MỸ (Beauty)
+  ─────────────────────
+  Icon gợi ý:          <svg cánh bướm hoặc mặt trời>
+  Tên giá trị:         Mỹ — Cuộc Sống Hài Hòa
+  Mô tả (2–3 câu):    Sức khỏe không chỉ là thân thể không bệnh tật, mà còn là sự hài hòa giữa thể chất, tinh thần và tâm hồn. Nam Hà hướng đến một cuộc sống đẹp, an nhiên và trọn vẹn cho mỗi người.
+
+────────────────────────────────────────────────────
+
+[SECTION: features]
+
+  Tiêu đề section:
+  ─────────────────
+  Tại Sao Chọn Nam Hà?
+
+  Mô tả đầu section (1 câu):
+  ──────────────────────────
+  Những lý do khiến hàng ngàn gia đình Việt tin tưởng đồng hành cùng Nam Hà mỗi ngày.
+
+  Feature 1:
+  ──────────
+  Icon gợi ý:      <svg đồng hồ>
+  Tiêu đề:          Hoàn Toàn Miễn Phí
+  Mô tả:            Mọi video, bài viết và chia sẻ đều miễn phí — vì Nam Hà tin sức khỏe không phải là hàng hóa.
+
+  Feature 2:
+  ──────────
+  Icon gợi ý:      <svg cuốn sách hoặc kính lúp>
+  Tiêu đề:          Kiến Thức Thực Chứng
+  Mô tả:            Nội dung dựa trên nghiên cứu từ các tạp chí y khoa và tổ chức sức khỏe hàng đầu thế giới.
+
+  Feature 3:
+  ──────────
+  Icon gợi ý:      <svg trái tim hoặc nhà>
+  Tiêu đề:          Cộng Đồng Vững Mạnh
+  Mô tả:            Gia nhập cộng đồng Sức Khỏe Chủ Động — nơi chia sẻ, học hỏi và cùng nhau tiến bộ mỗi ngày.
+
+  Feature 4:
+  ──────────
+  Icon gợi ý:      <svg bông hoa hoặc lá cây>
+  Tiêu đề:          Dễ Áp Dụng
+  Mô tả:            Phương pháp đơn giản, dễ thực hiện ngay tại nhà — phù hợp cho cả người cao tuổi và người bận rộn.
+
+  Feature 5:
+  ──────────
+  Icon gợi ý:      <svg mặt trời hoặc cây>
+  Tiêu đề:          Kiến Thức Từ Gốc Rễ
+  Mô tả:            Đi sâu vào nguyên nhân gốc rễ của bệnh tật — không chỉ giải quyết triệu chứng, mà mang lại giải pháp bền vững cho sức khỏe dài lâu.
+
+  Feature 6:
+  ──────────
+  Icon gợi ý:      <svg người hoặc nhóm>
+  Tiêu đề:          Phù Hợp Mọi Lứa Tuổi
+  Mô tả:            Nội dung dễ hiểu, dễ nhớ, phù hợp cho cả trẻ nhỏ, người trưởng thành và người cao niên.
+
+────────────────────────────────────────────────────
+
+[SECTION: video]
+
+  Tiêu đề section:
+  ─────────────────
+  Video Nổi Bật
+
+  Mô tả đầu section (1 câu):
+  ──────────────────────────
+  Những video được yêu thích nhất trên kênh YouTube Nam Hà — xem ngay để bắt đầu hành trình sức khỏe của bạn.
+
+  Video 1 — Video featured lớn (chọn video quan trọng / mới nhất):
+  ───────────────────────────────────────────────────────────────
+  Tiêu đề:    [Hết Ngay Đau Chân, Đau Đầu Gối Với 5 Thức Yoga Đơn Giản, Dễ Tập Tại Nhà]
+  Link:       https://www.youtube.com/watch?v=2jguRcKCRdg
+
+  Video 2:
+  ─────────
+  Tiêu đề:    [Tập Mỗi Sáng Cả Đời Khỏi Lo Đột Quỵ]
+  Link:       https://www.youtube.com/watch?v=j_1r3nKnIBU
+
+  Video 3:
+  ─────────
+  Tiêu đề:    [Tại Sao Ăn Ít Giúp Sống Lâu?]
+  Link:       https://www.youtube.com/watch?v=R8zA4Hl7IE0
+
+  Video 4:
+  ─────────
+  Tiêu đề:    [5 Thứ Nước Thần Thải Độc Vào Sáng Sớm]
+  Link:       https://www.youtube.com/watch?v=o4aZaJV9aB0
+
+  (Ghi chú: Mục này sẽ cập nhật link thật sau khi thực hiện Bước 1.3 — lấy link từ YouTube.)
+
+────────────────────────────────────────────────────
+
+[SECTION: testimonials]
+
+  Tiêu đề section:
+  ─────────────────
+  Cảm Nhận Cộng Đồng
+
+  Mô tả đầu section (1 câu):
+  ──────────────────────────
+  Những chia sẻ từ các thành viên trong cộng đồng Sức Khỏe Chủ Động — những câu chuyện có thật, đầy cảm hứng.
+
+  Testimonial 1:
+  ──────────────
+  Avatar:     assets/images/avatar-placeholder.svg (có thể dùng icon initials sau)
+  Tên:        Chị Minh Hương — Hà Nội
+  Nội dung:   "Từ ngày theo dõi Nam Hà, tôi thay đổi hoàn toàn cách nhìn về sức khỏe. Không còn lo lắng mỗi khi đau ốm, không còn chạy theo thuốc thang vô tội vạ. Cả gia đình tôi đều khỏe mạnh và vui vẻ hơn. Cảm ơn Nam Hà từ tận đáy lòng."
+
+  Testimonial 2:
+  ──────────────
+  Avatar:     assets/images/avatar-placeholder.svg
+  Tên:        Anh Quốc Anh — TP. Hồ Chí Minh
+  Nội dung:   "Tôi từng rất hoài nghi về các phương pháp chăm sóc sức khỏe tự nhiên. Nhưng những gì Nam Hà chia sẻ có cơ sở khoa học rõ ràng, dễ hiểu, dễ làm. Sức khỏe của tôi cải thiện rõ rệt chỉ sau 3 tháng."
+
+  Testimonial 3:
+  ──────────────
+  Avatar:     assets/images/avatar-placeholder.svg
+  Tên:        Cô Nguyễn Thị Lài — Đà Nẵng
+  Nội dung:   "Ở tuổi 68, tôi tưởng mình phải sống chung với đau nhức đến hết đời. Nhờ Nam Hà, tôi biết cách chăm sóc cơ thể đúng cách. Bây giờ tôi khỏe hơn, đi lại nhẹ nhàng và tinh thần cũng phơi phới hơn nhiều."
+
+  Testimonial 4:
+  ──────────────
+  Avatar:     assets/images/avatar-placeholder.svg
+  Tên:        Chị Thanh Thảo — Huế
+  Nội dung:   "Điều tôi quý nhất ở Nam Hà là sự tử tế và kiên nhẫn. Mỗi video, mỗi bài viết đều chứa đựng tâm huyết thực sự. Tôi đã học được cách yêu thương cơ thể mình hơn, và điều đó thay đổi cuộc sống của tôi."
+
+────────────────────────────────────────────────────
+
+[SECTION: mission]
+
+  Tiêu đề section:
+  ─────────────────
+  Sứ Mệnh Lan Tỏa
+
+  Nội dung chính (3–4 câu cảm xúc):
+  ────────────────────────────────────
+  Nam Hà tin rằng một Việt Nam khỏe mạnh bắt đầu từ mỗi gia đình — từ mỗi bữa ăn, mỗi thói quen, mỗi kiến thức nhỏ bé được chia sẻ mỗi ngày.
+
+  Hành trình thay đổi số phận của hàng triệu người không thể thực hiện chỉ bởi một người. Nó cần tất cả chúng ta — cùng nhau học hỏi, cùng nhau lan tỏa, cùng nhau nâng đỡ.
+
+  Nếu bạn tin rằng sức khỏe là tài sản quý giá nhất, hãy cùng Nam Hà viết tiếp câu chuyện này. Bởi một ngày nào đó, "Việt Nam không còn ung thư" sẽ không chỉ là giấc mơ.
+
+  Button text:
+  ─────────────
+  Chia Sẻ Ngay — Lan Tỏa Yêu Thương
+
+  Button text (phụ):
+  ──────────────────
+  Theo Dõi Kênh YouTube
+
+────────────────────────────────────────────────────
+
+[SECTION: faq]
+
+  Tiêu đề section:
+  ─────────────────
+  Câu Hỏi Thường Gặp
+
+  Mô tả đầu section (1 câu):
+  ──────────────────────────
+  Những thắc mắc phổ biến nhất từ cộng đồng Sức Khỏe Chủ Động.
+
+  Câu hỏi 1:
+  ──────────
+  Hỏi:   Nội dung của Nam Hà có miễn phí hoàn toàn không?
+  Đáp:   Có. 100% nội dung trên kênh YouTube và các nền tảng của Nam Hà đều hoàn toàn miễn phí. Nam Hà tin rằng kiến thức sức khỏe đúng đắn là quyền lợi cơ bản của mỗi người, không ai nên phải trả tiền để được khỏe mạnh.
+
+  Câu hỏi 2:
+  ──────────
+  Hỏi:   Kiến thức Nam Hà chia sẻ có đáng tin cậy không?
+  Đáp:   Tất cả nội dung đều được Nam Hà nghiên cứu từ các tài liệu y khoa uy tín, các tạp chí khoa học quốc tế và kinh nghiệm thực tế hơn 6 năm đồng hành cùng cộng đồng. Nam Hà luôn khuyến khích người xem tham khảo thêm ý kiến bác sĩ khi cần thiết.
+
+  Câu hỏi 3:
+  ──────────
+  Hỏi:   Làm thế nào để bắt đầu hành trình chăm sóc sức khỏe chủ động?
+  Đáp:   Rất đơn giản. Bạn chỉ cần bắt đầu từ những video trên kênh YouTube Nam Hà, tham gia cộng đồng Sức Khỏe Chủ Động trên Facebook và bắt đầu áp dụng từng thay đổi nhỏ trong cuộc sống hàng ngày. Mỗi bước nhỏ đều đáng quý.
+
+  Câu hỏi 4:
+  ──────────
+  Hỏi:   Nội dung có phù hợp với người cao tuổi không?
+  Đáp:   Có. Nam Hà thiết kế nội dung dễ hiểu, dễ nghe, dễ nhìn — rất phù hợp cho người cao tuổi. Nhiều cô chú 60–70 tuổi là thành viên tích cực trong cộng đồng và đã cải thiện sức khỏe rõ rệt.
+
+  Câu hỏi 5:
+  ──────────
+  Hỏi:   Tôi có thể chia sẻ nội dung của Nam Hà cho người thân không?
+  Đáp:   Rất hoan nghênh! Nam Hà mong muốn mỗi người xem sẽ trở thành một "đại sứ sức khỏe" — chia sẻ kiến thức đến người thân, bạn bè và cộng đồng của mình. Lan tỏa càng rộng, càng nhiều người được giúp đỡ.
+
+  Câu hỏi 6:
+  ──────────
+  Hỏi:   Làm sao để theo dõi Nam Hà trên các nền tảng?
+  Đáp:   Bạn có thể đăng ký kênh YouTube Nam Hà, theo dõi trên Facebook và tham gia nhóm Zalo Sức Khỏe Chủ Động. Tất cả link đều có ở cuối trang web này.
+
+────────────────────────────────────────────────────
+
+[SECTION: footer]
+
+  Cột 1 — Về Nam Hà:
+  ────────────────────
+  Logo / Tên:  Nam Hà Sức Khỏe Chủ Động
+  Tagline:     Lan tỏa kiến thức sức khỏe tới hàng triệu gia đình Việt.
+
+  Cột 2 — Liên Kết Nhanh:
+  ────────────────────────
+  Link 1:  Trang Chủ               (#hero)
+  Link 2:  Về Nam Hà               (#about)
+  Link 3:  Giá Trị Cốt Lõi         (#values)
+  Link 4:  Video Nổi Bật           (#video)
+  Link 5:  Câu Hỏi Thường Gặp      (#faq)
+
+  Cột 3 — Mạng Xã Hội:
+  ──────────────────────
+  YouTube:  youtube.com/@namha (hiển thị icon YouTube)
+  Facebook: facebook.com/namha (hiển thị icon Facebook)
+  Zalo:     Zalo OA Nam Hà (hiển thị icon Zalo)
+
+  Copyright:
+  ──────────
+  © 2024 Nam Hà Sức Khỏe Chủ Động. Mọi nội dung chia sẻ vì cộng đồng.
+
+────────────────────────────────────────────────────
+# HẾT — Đã hoàn thành toàn bộ nội dung text cho 10 section.
+# Tổng cộng: 10 sections, sẵn sàng để copy vào index.html.

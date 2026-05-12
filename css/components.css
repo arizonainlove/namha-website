@@ -1,0 +1,279 @@
+/* ===== NAM HÀ SỨC KHỎE CHỦ ĐỘNG — components.css ===== */
+/* Buttons, cards, navbar, reusable components */
+
+/* ── Mobile nav overlay ── */
+.nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 104;
+}
+
+.nav-overlay.is-visible {
+  display: block;
+}
+
+/* ── Hamburger Menu ── */
+.navbar__toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 110;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar--scrolled .navbar__toggle {
+  background: rgba(0, 0, 0, 0.08);
+  border-color: rgba(0, 0, 0, 0.1);
+  color: var(--color-text-primary);
+}
+
+.navbar__icon {
+  display: block;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .navbar--scrolled {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .navbar__toggle {
+    display: flex;
+  }
+
+  .navbar__links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    max-width: 300px;
+    height: 100vh;
+    flex-direction: column;
+    background: var(--color-surface);
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+    padding: 80px 32px 32px;
+    gap: 8px;
+    transition: right 0.3s ease;
+    display: flex;
+    z-index: 105;
+  }
+
+  .navbar__links.is-open {
+    right: 0;
+  }
+
+  .nav-link {
+    color: var(--color-text-primary) !important;
+    font-size: 1.05rem;
+    padding: 12px 16px;
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .nav-link:hover {
+    background: rgba(57, 175, 213, 0.08);
+  }
+}
+
+/* ── Navbar ── */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(15, 125, 163, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.navbar--scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  padding: 10px 0;
+}
+
+.navbar__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__left {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .navbar__left {
+    flex: 1;
+  }
+}
+
+.navbar__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar--scrolled .navbar__logo {
+  color: var(--color-text-primary);
+}
+
+.navbar__logo img {
+  border-radius: 50%;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-link {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  transition: color 0.2s ease;
+  padding: 8px 0;
+}
+
+.navbar--scrolled .nav-link {
+  color: var(--color-text-secondary);
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.navbar--scrolled .nav-link:hover {
+  color: var(--color-primary);
+}
+
+/* ── Buttons ── */
+.btn {
+  display: inline-block;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 14px 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-align: center;
+  border: 2px solid transparent;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-outline--white {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
+.btn-outline--white:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #fff;
+}
+
+.btn-accent {
+  background: var(--color-accent);
+  color: #1A1A1A;
+  border-color: var(--color-accent);
+}
+
+.btn-accent:hover {
+  background: #E69510;
+  border-color: #E69510;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(245, 166, 35, 0.35);
+}
+
+/* Hero CTA nổi bật */
+.btn--hero-cta {
+  font-size: 1.1rem;
+  padding: 16px 40px;
+  box-shadow: 0 4px 20px rgba(245, 166, 35, 0.4);
+}
+
+.btn--hero-cta:hover {
+  box-shadow: 0 8px 32px rgba(245, 166, 35, 0.55);
+}
+
+/* ── Cards ── */
+.card {
+  background: var(--color-surface);
+  border-radius: 12px;
+  padding: 32px 24px;
+  transition: all 0.25s ease;
+}
+
+.card--value {
+  text-align: center;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.card--value:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(57, 175, 213, 0.12);
+  border-color: rgba(57, 175, 213, 0.3);
+}
+
+.card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: rgba(57, 175, 213, 0.08);
+}
+
+.card__title {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  color: var(--color-text-primary);
+}
+
+.card__text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nam Hà Sức Khỏe Chủ Động — Sống Khỏe Mạnh – Bình An – Hạnh Phúc</title>
+  <meta name="description" content="Nam Hà — chuyên gia Chăm Sóc Sức Khỏe Chủ Động với hơn 6 năm kinh nghiệm, lan tỏa kiến thức sức khỏe tới hàng triệu gia đình Việt Nam.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nam Hà Sức Khỏe Chủ Động">
+  <meta property="og:description" content="Sống Khỏe Mạnh – Bình An – Hạnh Phúc — Hành trình chăm sóc sức khỏe chủ động dành cho mọi gia đình Việt.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:url" content="https://namha-website.netlify.app">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nam Hà Sức Khỏe Chủ Động">
+  <meta name="twitter:description" content="Sống Khỏe Mạnh – Bình An – Hạnh Phúc — Hành trình chăm sóc sức khỏe chủ động dành cho mọi gia đình Việt.">
+  <meta name="twitter:image" content="assets/images/og-image.jpg">
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#39afd5">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+
+  <!-- Google Fonts (non-render-blocking) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"></noscript>
+
+  <!-- CSS (inline critical, async full) -->
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Be Vietnam Pro',sans-serif;font-size:1.0625rem;line-height:1.8;color:var(--color-text-primary);background-color:var(--color-bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    img{display:block;max-width:100%;height:auto}a{text-decoration:none;color:inherit}ul{list-style:none}
+    :root{--color-primary:#39afd5;--color-primary-light:#5FC7E6;--color-primary-dark:#1A8DB3;--color-accent:#F5A623;--color-accent-soft:#FFF8E7;--color-bg:#FAFAF9;--color-surface:#FFFFFF;--color-text-primary:#1A1A1A;--color-text-secondary:#4B5563;--color-text-muted:#9CA3AF;--color-border:#E5E7EB;--gradient-hero:linear-gradient(135deg,#0F7DA3 0%,#39afd5 50%,#5FC7E6 100%);--gradient-card:linear-gradient(180deg,rgba(57,175,213,0.05) 0%,transparent 100%)}
+    .container{max-width:1200px;margin:0 auto;padding:0 24px}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .skip-link{position:absolute;top:-100%;left:50%;transform:translateX(-50%);background:var(--color-primary);color:#fff;padding:8px 24px;border-radius:0 0 8px 8px;z-index:1000;font-weight:600}
+    .skip-link:focus{top:0}
+    .navbar{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(15,125,163,.85);transition:background .3s ease,box-shadow .3s ease;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+    .navbar__inner{position:relative;display:flex;align-items:center}
+    .navbar__left{display:flex;align-items:center}
+    .navbar__logo{position:absolute;left:50%;transform:translateX(-50%)}
+    .navbar__logo img{border-radius:50%}
+    .navbar__links{display:flex;gap:32px}
+    .navbar__toggle{display:none}
+    .nav-link{font-family:'Be Vietnam Pro',sans-serif;font-size:.9rem;font-weight:500;color:#fff;padding:8px 0}
+    .hero{min-height:100vh;display:flex;align-items:center;background:var(--gradient-hero);padding:120px 0 80px;position:relative;overflow:hidden}
+    .hero__inner{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;width:100%}
+    .hero__content{display:flex;flex-direction:column;gap:20px}
+    .hero__title{font-family:'Be Vietnam Pro',sans-serif;font-size:clamp(2rem,5vw,3.5rem);line-height:1.2;color:#fff}
+    .hero__subtitle{font-size:clamp(1rem,1.5vw,1.2rem);color:rgba(255,255,255,.92);max-width:520px;line-height:1.7}
+    .hero__image{display:flex;justify-content:center;align-items:center}
+    .hero__image img{width:100%;max-width:400px;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.2)}
+    .hero__actions{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px}
+    .btn{display:inline-block;font-family:'Be Vietnam Pro',sans-serif;font-weight:600;font-size:1rem;padding:14px 32px;border-radius:8px;cursor:pointer;text-align:center;border:2px solid transparent}
+    .btn-accent{background:var(--color-accent);color:#1A1A1A;border-color:var(--color-accent)}
+    .btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+    .btn--hero-cta{font-size:1.1rem;padding:16px 40px;box-shadow:0 4px 20px rgba(245,166,35,.4)}
+    @media (max-width:768px){.navbar__links{display:none}.navbar__left{flex:1}.navbar__toggle{display:flex;align-items:center;justify-content:center;width:44px;height:44px;position:relative;z-index:110;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.25);border-radius:10px;cursor:pointer;color:#fff;font-size:22px}}
+  </style>
+  <link rel="stylesheet" href="css/main.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/components.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/sections.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+  </noscript>
+
+  <!-- Preload hero image for LCP -->
+  <link rel="preload" href="assets/images/namha-portrait.webp" as="image" fetchpriority="high">
+</head>
+<body>
+<!-- Skip link for accessibility -->
+<a href="#hero" class="skip-link">Chuyển đến nội dung chính</a>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <div class="navbar__left">
+        <button class="navbar__toggle" aria-label="Mở menu" aria-expanded="false">
+          <span class="navbar__icon">☰</span>
+        </button>
+        <ul class="navbar__links">
+          <li><a href="#about" class="nav-link" data-nav-close>Về Tôi</a></li>
+          <li><a href="#values" class="nav-link" data-nav-close>Giá Trị</a></li>
+          <li><a href="#video" class="nav-link" data-nav-close>Video</a></li>
+          <li><a href="#faq" class="nav-link" data-nav-close>FAQ</a></li>
+        </ul>
+      </div>
+      <a href="#hero" class="navbar__logo" aria-label="Nam Hà Sức Khỏe Chủ Động">
+        <img src="assets/images/logo.png" alt="Nam Hà Sức Khỏe Chủ Động" width="40" height="40">
+      </a>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <!-- ===== SECTION 1: HERO ===== -->
+    <section id="hero" class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <h1 class="hero__title" data-aos="fade-up" data-aos-delay="0">
+          Sống Khỏe Mạnh – <br>Bình An – Hạnh Phúc
+        </h1>
+        <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="150">
+          Hành trình chăm sóc sức khỏe chủ động dành cho mọi gia đình Việt — từ kiến thức thực chứng đến lối sống lành mạnh.
+        </p>
+        <div class="hero__actions" data-aos="fade-up" data-aos-delay="300">
+          <a href="#video" class="btn btn-accent btn--hero-cta">Xem Video Ngay</a>
+          <a href="#about" class="btn btn-outline">Khám Phá Thêm</a>
+        </div>
+      </div>
+      <div class="hero__image" data-aos="fade-left" data-aos-delay="200">
+        <img src="assets/images/namha-portrait.webp" alt="Nam Hà — Chuyên gia Chăm Sóc Sức Khỏe Chủ Động" width="400" height="500" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: STATS ===== -->
+  <section id="stats" class="stats">
+    <div class="container">
+      <h2 class="sr-only">Thành Tựu</h2>
+      <div class="stats__grid">
+        <div class="stats__card" data-aos="fade-up" data-aos-delay="0">
+          <span class="stats__number">6</span><span class="stats__suffix">+</span>
+          <span class="stats__label">Năm Kinh Nghiệm</span>
+        </div>
+        <div class="stats__card" data-aos="fade-up" data-aos-delay="100">
+          <span class="stats__number">1.000.000</span><span class="stats__suffix">+</span>
+          <span class="stats__label">Người Theo Dõi</span>
+        </div>
+        <div class="stats__card" data-aos="fade-up" data-aos-delay="200">
+          <span class="stats__number">100</span><span class="stats__suffix">%</span>
+          <span class="stats__label">Nội Dung Miễn Phí</span>
+        </div>
+        <div class="stats__card" data-aos="fade-up" data-aos-delay="300">
+          <span class="stats__number">50.000.000</span><span class="stats__suffix">+</span>
+          <span class="stats__label">Lượt Xem</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3: ABOUT ===== -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section__title" data-aos="fade-up">Về Nam Hà</h2>
+      <div class="about__inner">
+        <div class="about__image" data-aos="fade-right">
+          <img src="assets/images/namha-portrait.webp" alt="Chân dung Nam Hà — Chuyên gia Sức Khỏe Chủ Động" width="400" height="500" loading="lazy">
+        </div>
+        <div class="about__content" data-aos="fade-left" data-aos-delay="100">
+          <p>
+            Nam Hà là chuyên gia trong lĩnh vực Chăm Sóc Sức Khỏe Chủ Động với hơn 6 năm đồng hành cùng hàng chục ngàn gia đình Việt. Từ những ngày đầu tiên, điều thôi thúc Nam Hà không chỉ là kiến thức y học, mà là một khát vọng lớn hơn — giúp người Việt chủ động làm chủ sức khỏe của chính mình.
+          </p>
+          <p>
+            "Việt Nam không còn ung thư" không chỉ là một khẩu hiệu, đó là sứ mệnh sống. Nam Hà tin rằng mỗi người đều có thể thay đổi cuộc đời mình khi có đúng kiến thức và một cộng đồng nâng đỡ. Tất cả nội dung được xây dựng dựa trên nghiên cứu thực chứng, dễ hiểu, dễ áp dụng cho mọi lứa tuổi.
+          </p>
+          <p>
+            Hành trình còn dài, nhưng Nam Hà không đi một mình. Cùng với cộng đồng Sức Khỏe Chủ Động, chúng ta sẽ lan tỏa những giá trị tốt đẹp — để mỗi gia đình Việt đều có thể sống khỏe, sống bình an và sống hạnh phúc trọn vẹn.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4: VALUES ===== -->
+  <section id="values" class="values">
+    <div class="container">
+      <h2 class="section__title" data-aos="fade-up">Giá Trị Cốt Lõi</h2>
+      <p class="section__desc" data-aos="fade-up" data-aos-delay="50">
+        Ba giá trị nền tảng dẫn dắt mọi nội dung và hoạt động của Nam Hà.
+      </p>
+      <div class="values__grid">
+        <div class="card card--value" data-aos="zoom-in" data-aos-delay="0">
+          <div class="card__icon">
+            <svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#39afd5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          <h3 class="card__title">Chân — Kiến Thức Thực Chứng</h3>
+          <p class="card__text">Mọi thông tin chia sẻ đều dựa trên nghiên cứu khoa học và tài liệu y khoa uy tín. Nam Hà cam kết chỉ nói những điều có căn cứ, giúp bạn an tâm từng bước trên hành trình chăm sóc sức khỏe.</p>
+        </div>
+        <div class="card card--value" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card__icon">
+            <svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#39afd5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+          </div>
+          <h3 class="card__title">Thiện — Lan Tỏa Yêu Thương</h3>
+          <p class="card__text">Tất cả nội dung đều được chia sẻ miễn phí, xuất phát từ mong muốn chân thành giúp đỡ cộng đồng. Nam Hà tin rằng sức khỏe là quyền cơ bản của mỗi người, không ai bị bỏ lại phía sau.</p>
+        </div>
+        <div class="card card--value" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card__icon">
+            <svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#39afd5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h3 class="card__title">Mỹ — Cuộc Sống Hài Hòa</h3>
+          <p class="card__text">Sức khỏe không chỉ là thân thể không bệnh tật, mà còn là sự hài hòa giữa thể chất, tinh thần và tâm hồn. Nam Hà hướng đến một cuộc sống đẹp, an nhiên và trọn vẹn cho mỗi người.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 5: FEATURES ===== -->
+  <section id="features" class="features">
+    <div class="container">
+      <h2 class="section__title" data-aos="fade-up">Tại Sao Chọn Nam Hà?</h2>
+      <p class="section__desc" data-aos="fade-up" data-aos-delay="50">
+        Những lý do khiến hàng ngàn gia đình Việt tin tưởng đồng hành cùng Nam Hà mỗi ngày.
+      </p>
+      <div class="features__grid">
+        <div class="feature-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="feature-item__icon">
+            <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39afd5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="feature-item__title">Hoàn Toàn Miễn Phí</h3>
+            <p class="feature-item__text">Mọi video, bài viết và chia sẻ đều miễn phí — vì Nam Hà tin sức khỏe không phải là hàng hóa.</p>
+          </div>
+        </div>
+        <div class="feature-item" data-aos="fade-up" data-aos-delay="50">
+          <div class="feature-item__icon">
+            <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39afd5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="feature-item__title">Kiến Thức Thực Chứng</h3>
+            <p class="feature-item__text">Nội dung dựa trên nghiên cứu từ các tạp chí y khoa và tổ chức sức khỏe hàng đầu thế giới.</p>
+          </div>
+        </div>
+        <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-item__icon">
+            <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39afd5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="feature-item__title">Cộng Đồng Vững Mạnh</h3>
+            <p class="feature-item__text">Gia nhập cộng đồng Sức Khỏe Chủ Động — nơi chia sẻ, học hỏi và cùng nhau tiến bộ mỗi ngày.</p>
+          </div>
+        </div>
+        <div class="feature-item" data-aos="fade-up" data-aos-delay="150">
+          <div class="feature-item__icon">
+            <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39afd5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="feature-item__title">Dễ Áp Dụng</h3>
+            <p class="feature-item__text">Phương pháp đơn giản, dễ thực hiện ngay tại nhà — phù hợp cho cả người cao tuổi và người bận rộn.</p>
+          </div>
+        </div>
+        <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-item__icon">
+            <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39afd5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="feature-item__title">Kiến Thức Từ Gốc Rễ</h3>
+            <p class="feature-item__text">Đi sâu vào nguyên nhân gốc rễ của bệnh tật — không chỉ giải quyết triệu chứng, mà mang lại giải pháp bền vững cho sức khỏe dài lâu.</p>
+          </div>
+        </div>
+        <div class="feature-item" data-aos="fade-up" data-aos-delay="250">
+          <div class="feature-item__icon">
+            <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#39afd5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="feature-item__title">Phù Hợp Mọi Lứa Tuổi</h3>
+            <p class="feature-item__text">Nội dung dễ hiểu, dễ nhớ, phù hợp cho cả trẻ nhỏ, người trưởng thành và người cao niên.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 6: VIDEO ===== -->
+  <section id="video" class="video">
+    <div class="container">
+      <h2 class="section__title" data-aos="fade-up">Video Nổi Bật</h2>
+      <p class="section__desc" data-aos="fade-up" data-aos-delay="50">
+        Những video được yêu thích nhất trên kênh YouTube Nam Hà — xem ngay để bắt đầu hành trình sức khỏe của bạn.
+      </p>
+      <div class="video__featured" data-aos="fade-up">
+        <div class="video__embed">
+          <iframe src="https://www.youtube-nocookie.com/embed/2jguRcKCRdg" title="Hết Ngay Đau Chân, Đau Đầu Gối Với 5 Thức Yoga Đơn Giản, Dễ Tập Tại Nhà" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <h3 class="video__title">Hết Ngay Đau Chân, Đau Đầu Gối Với 5 Thức Yoga Đơn Giản, Dễ Tập Tại Nhà</h3>
+      </div>
+      <div class="video__grid">
+        <div class="video__card" data-aos="fade-up" data-aos-delay="0">
+          <div class="video__embed">
+            <iframe src="https://www.youtube-nocookie.com/embed/j_1r3nKnIBU" title="Tập Mỗi Sáng Cả Đời Khỏi Lo Đột Quỵ" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <h3 class="video__card-title">Tập Mỗi Sáng Cả Đời Khỏi Lo Đột Quỵ</h3>
+        </div>
+        <div class="video__card" data-aos="fade-up" data-aos-delay="100">
+          <div class="video__embed">
+            <iframe src="https://www.youtube-nocookie.com/embed/R8zA4Hl7IE0" title="Tại Sao Ăn Ít Giúp Sống Lâu?" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <h3 class="video__card-title">Tại Sao Ăn Ít Giúp Sống Lâu?</h3>
+        </div>
+        <div class="video__card" data-aos="fade-up" data-aos-delay="200">
+          <div class="video__embed">
+            <iframe src="https://www.youtube-nocookie.com/embed/o4aZaJV9aB0" title="5 Thứ Nước Thần Thải Độc Vào Sáng Sớm" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <h3 class="video__card-title">5 Thứ Nước Thần Thải Độc Vào Sáng Sớm</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 7: TESTIMONIALS ===== -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2 class="section__title" data-aos="fade-up">Cảm Nhận Cộng Đồng</h2>
+      <p class="section__desc" data-aos="fade-up" data-aos-delay="50">
+        Những chia sẻ từ các thành viên trong cộng đồng Sức Khỏe Chủ Động — những câu chuyện có thật, đầy cảm hứng.
+      </p>
+      <div class="testimonials__grid">
+        <div class="testimonial-card" data-aos="flip-left" data-aos-delay="0">
+          <div class="testimonial-card__avatar">
+            <img src="assets/images/avatar-placeholder.svg" alt="Chị Minh Hương" width="60" height="60" loading="lazy">
+          </div>
+          <p class="testimonial-card__text">"Từ ngày theo dõi Nam Hà, tôi thay đổi hoàn toàn cách nhìn về sức khỏe. Không còn lo lắng mỗi khi đau ốm, không còn chạy theo thuốc thang vô tội vạ. Cả gia đình tôi đều khỏe mạnh và vui vẻ hơn. Cảm ơn Nam Hà từ tận đáy lòng."</p>
+          <span class="testimonial-card__author">— Chị Minh Hương, Hà Nội</span>
+        </div>
+        <div class="testimonial-card" data-aos="flip-left" data-aos-delay="150">
+          <div class="testimonial-card__avatar">
+            <img src="assets/images/avatar-placeholder.svg" alt="Anh Quốc Anh" width="60" height="60" loading="lazy">
+          </div>
+          <p class="testimonial-card__text">"Tôi từng rất hoài nghi về các phương pháp chăm sóc sức khỏe tự nhiên. Nhưng những gì Nam Hà chia sẻ có cơ sở khoa học rõ ràng, dễ hiểu, dễ làm. Sức khỏe của tôi cải thiện rõ rệt chỉ sau 3 tháng."</p>
+          <span class="testimonial-card__author">— Anh Quốc Anh, TP. Hồ Chí Minh</span>
+        </div>
+        <div class="testimonial-card" data-aos="flip-left" data-aos-delay="300">
+          <div class="testimonial-card__avatar">
+            <img src="assets/images/avatar-placeholder.svg" alt="Cô Nguyễn Thị Lài" width="60" height="60" loading="lazy">
+          </div>
+          <p class="testimonial-card__text">"Ở tuổi 68, tôi tưởng mình phải sống chung với đau nhức đến hết đời. Nhờ Nam Hà, tôi biết cách chăm sóc cơ thể đúng cách. Bây giờ tôi khỏe hơn, đi lại nhẹ nhàng và tinh thần cũng phơi phới hơn nhiều."</p>
+          <span class="testimonial-card__author">— Cô Nguyễn Thị Lài, Đà Nẵng</span>
+        </div>
+        <div class="testimonial-card" data-aos="flip-left" data-aos-delay="450">
+          <div class="testimonial-card__avatar">
+            <img src="assets/images/avatar-placeholder.svg" alt="Chị Thanh Thảo" width="60" height="60" loading="lazy">
+          </div>
+          <p class="testimonial-card__text">"Điều tôi quý nhất ở Nam Hà là sự tử tế và kiên nhẫn. Mỗi video, mỗi bài viết đều chứa đựng tâm huyết thực sự. Tôi đã học được cách yêu thương cơ thể mình hơn, và điều đó thay đổi cuộc sống của tôi."</p>
+          <span class="testimonial-card__author">— Chị Thanh Thảo, Huế</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 8: MISSION ===== -->
+  <section id="mission" class="mission">
+    <div class="container">
+      <div class="mission__content" data-aos="fade-up">
+        <h2 class="mission__title">Sứ Mệnh Lan Tỏa</h2>
+        <p class="mission__text">
+          Nam Hà tin rằng một Việt Nam khỏe mạnh bắt đầu từ mỗi gia đình — từ mỗi bữa ăn, mỗi thói quen, mỗi kiến thức nhỏ bé được chia sẻ mỗi ngày.
+        </p>
+        <p class="mission__text">
+          Hành trình thay đổi số phận của hàng triệu người không thể thực hiện chỉ bởi một người. Nó cần tất cả chúng ta — cùng nhau học hỏi, cùng nhau lan tỏa, cùng nhau nâng đỡ.
+        </p>
+        <p class="mission__text">
+          Nếu bạn tin rằng sức khỏe là tài sản quý giá nhất, hãy cùng Nam Hà viết tiếp câu chuyện này. Bởi một ngày nào đó, "Việt Nam không còn ung thư" sẽ không chỉ là giấc mơ.
+        </p>
+        <div class="mission__actions">
+          <button onclick="shareWebsite()" class="btn btn-accent">Chia Sẻ Ngay — Lan Tỏa Yêu Thương</button>
+          <a href="https://www.youtube.com/@NamH%C3%A0-k3t" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-outline--white">Theo Dõi Kênh YouTube</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 9: FAQ ===== -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2 class="section__title" data-aos="fade-up">Câu Hỏi Thường Gặp</h2>
+      <p class="section__desc" data-aos="fade-up" data-aos-delay="50">
+        Những thắc mắc phổ biến nhất từ cộng đồng Sức Khỏe Chủ Động.
+      </p>
+      <div class="faq__list">
+        <div class="faq__item" data-aos="fade-up" data-aos-delay="0">
+          <button class="faq__question" aria-expanded="false">
+            <span>Nội dung của Nam Hà có miễn phí hoàn toàn không?</span>
+            <svg class="faq__icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>Có. 100% nội dung trên kênh YouTube và các nền tảng của Nam Hà đều hoàn toàn miễn phí. Nam Hà tin rằng kiến thức sức khỏe đúng đắn là quyền lợi cơ bản của mỗi người, không ai nên phải trả tiền để được khỏe mạnh.</p>
+          </div>
+        </div>
+        <div class="faq__item" data-aos="fade-up" data-aos-delay="50">
+          <button class="faq__question" aria-expanded="false">
+            <span>Kiến thức Nam Hà chia sẻ có đáng tin cậy không?</span>
+            <svg class="faq__icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>Tất cả nội dung đều được Nam Hà nghiên cứu từ các tài liệu y khoa uy tín, các tạp chí khoa học quốc tế và kinh nghiệm thực tế hơn 6 năm đồng hành cùng cộng đồng. Nam Hà luôn khuyến khích người xem tham khảo thêm ý kiến bác sĩ khi cần thiết.</p>
+          </div>
+        </div>
+        <div class="faq__item" data-aos="fade-up" data-aos-delay="100">
+          <button class="faq__question" aria-expanded="false">
+            <span>Làm thế nào để bắt đầu hành trình chăm sóc sức khỏe chủ động?</span>
+            <svg class="faq__icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>Rất đơn giản. Bạn chỉ cần bắt đầu từ những video trên kênh YouTube Nam Hà, tham gia cộng đồng Sức Khỏe Chủ Động trên Facebook và bắt đầu áp dụng từng thay đổi nhỏ trong cuộc sống hàng ngày. Mỗi bước nhỏ đều đáng quý.</p>
+          </div>
+        </div>
+        <div class="faq__item" data-aos="fade-up" data-aos-delay="150">
+          <button class="faq__question" aria-expanded="false">
+            <span>Nội dung có phù hợp với người cao tuổi không?</span>
+            <svg class="faq__icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>Có. Nam Hà thiết kế nội dung dễ hiểu, dễ nghe, dễ nhìn — rất phù hợp cho người cao tuổi. Nhiều cô chú 60–70 tuổi là thành viên tích cực trong cộng đồng và đã cải thiện sức khỏe rõ rệt.</p>
+          </div>
+        </div>
+        <div class="faq__item" data-aos="fade-up" data-aos-delay="200">
+          <button class="faq__question" aria-expanded="false">
+            <span>Tôi có thể chia sẻ nội dung của Nam Hà cho người thân không?</span>
+            <svg class="faq__icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>Rất hoan nghênh! Nam Hà mong muốn mỗi người xem sẽ trở thành một "đại sứ sức khỏe" — chia sẻ kiến thức đến người thân, bạn bè và cộng đồng của mình. Lan tỏa càng rộng, càng nhiều người được giúp đỡ.</p>
+          </div>
+        </div>
+        <div class="faq__item" data-aos="fade-up" data-aos-delay="250">
+          <button class="faq__question" aria-expanded="false">
+            <span>Làm sao để theo dõi Nam Hà trên các nền tảng?</span>
+            <svg class="faq__icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            <p>Bạn có thể đăng ký kênh YouTube Nam Hà, theo dõi trên Facebook và tham gia nhóm Zalo Sức Khỏe Chủ Động. Tất cả link đều có ở cuối trang web này.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- ===== SECTION 10: FOOTER ===== -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <div class="footer__brand">
+            <img src="assets/images/logo.png" alt="Nam Hà Sức Khỏe Chủ Động" width="40" height="40" loading="lazy">
+            <span class="footer__brand-name">Nam Hà Sức Khỏe Chủ Động</span>
+          </div>
+          <p class="footer__tagline">Lan tỏa kiến thức sức khỏe tới hàng triệu gia đình Việt.</p>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__heading">Liên Kết Nhanh</h3>
+          <ul class="footer__links">
+            <li><a href="#hero">Trang Chủ</a></li>
+            <li><a href="#about">Về Nam Hà</a></li>
+            <li><a href="#values">Giá Trị Cốt Lõi</a></li>
+            <li><a href="#video">Video Nổi Bật</a></li>
+            <li><a href="#faq">Câu Hỏi Thường Gặp</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__heading">Mạng Xã Hội</h3>
+          <ul class="footer__social">
+            <li>
+              <a href="https://www.youtube.com/@NamH%C3%A0-k3t" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/Healthcoachnamha?locale=vi_VN" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://zalo.me/0989935369" target="_blank" rel="noopener noreferrer" aria-label="Zalo">
+                <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="#0068FF">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.5 13h-7a.5.5 0 0 1-.5-.5v-5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5zm-1-2.5a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Nam Hà Sức Khỏe Chủ Động. Mọi nội dung chia sẻ vì cộng đồng.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JS -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+# Kế Hoạch Xây Dựng Website Nam Hà Sức Khỏe Chủ Động — guide.txt
+
+> **Dành cho người mới bắt đầu, làm một mình, không ngân sách.**
+> Mỗi bước đều có: mô tả việc cần làm → công cụ → thời gian → dấu hiệu hoàn thành.
+> Tổng thời gian dự kiến: **14–18 ngày** (làm rảnh rỗi, mỗi ngày 1–2 tiếng).
+
+---
+
+## Giai Đoạn 0 — Chuẩn Bị Máy & Tài Khoản (2 ngày)
+
+> Mục tiêu: Có đầy đủ công cụ và tài khoản để bắt đầu.
+
+### Bước 0.1 — Cài Antigravity ✅
+- **Việc cần làm:** Cài đặt Antigravity.
+- **Trạng thái:** ✔ Đã hoàn thành.
+
+### Bước 0.2 — Cài Git ✅
+- **Việc cần làm:** Tải và cài Git — công cụ quản lý phiên bản code.
+- **Trạng thái:** ✔ Đã hoàn thành.
+
+### Bước 0.3 — Tạo tài khoản GitHub ✅
+- **Việc cần làm:** Đăng ký tài khoản GitHub (miễn phí) — nơi chứa code và deploy website.
+- **Trạng thái:** ✔ Đã hoàn thành.
+
+### Bước 0.4 — Cài Claude Code vào VS Code ✅
+- **Việc cần làm:** Cài extension Claude Code trong VS Code.
+- **Trạng thái:** ✔ Đã hoàn thành.
+
+### Bước 0.5 — Tạo thư mục dự án ✅
+- **Việc cần làm:** Tạo thư mục chính cho dự án và cấu trúc file.
+- **Trạng thái:** ✔ Đã hoàn thành.
+
+**Checklist Giai đoạn 0:**
+- [x] Antigravity đã cài
+- [x] Git đã cài, `git --version` ra số
+- [x] Tài khoản GitHub đã tạo
+- [x] Claude Code extension đã cài
+- [x] Thư mục dự án đã tạo
+
+---
+
+## Giai Đoạn 1 — Xây Dựng Nội Dung Thật (3 ngày)
+
+> Mục tiêu: Có nội dung thật để đưa vào website. Làm việc này trước khi viết code là tối quan trọng — nội dung quyết định thiết kế, không phải ngược lại.
+
+### Bước 1.1 — Chuẩn bị text nội dung ✅
+- **Việc cần làm:** Viết sẵn nội dung cho từng section trong file văn bản (dùng Notepad hoặc Google Docs).
+- **Trạng thái:** ✔ Đã hoàn thành. File `noi-dung.txt` đã có nội dung đầy đủ cho 10 sections.
+
+### Bước 1.2 — Chuẩn bị hình ảnh ✅
+- **Việc cần làm:** Ảnh chân dung, logo, OG image.
+- **Trạng thái:** ✔ Đã hoàn thành. Các file đã có trong `assets/images/`.
+
+### Bước 1.3 — Lấy link YouTube video ✅
+- **Việc cần làm:** Chọn 4 video nổi bật nhất từ kênh YouTube của Nam Hà, ghi lại link và tiêu đề.
+- **Trạng thái:** ✔ Đã hoàn thành. Link đã cập nhật trong `noi-dung.txt`.
+
+**Checklist Giai đoạn 1:**
+- [x] Toàn bộ text nội dung đã viết xong
+- [x] Ảnh chân dung đã chụp và để trong assets/images/
+- [x] Logo đã thiết kế
+- [x] OG image đã tạo
+- [x] Danh sách 4 video YouTube đã có
+
+---
+
+## Giai Đoạn 2 — Viết HTML (2 ngày)
+
+> Mục tiêu: Tạo file index.html với toàn bộ cấu trúc 10 sections.
+
+### Bước 2.1 — Tạo khung HTML cơ bản ✅
+- **Trạng thái:** ✔ Đã hoàn thành. File index.html có cấu trúc đầy đủ, DOCTYPE, meta tags, OG tags, font, AOS.
+
+### Bước 2.2 — Điền nội dung từng section ✅
+- **Trạng thái:** ✔ Đã hoàn thành. Cả 10 sections đã có nội dung từ file noi-dung.txt, bao gồm YouTube embed (privacy-enhanced mode), AOS attributes, FAQ accordion markup.
+
+### Bước 2.3 — Kiểm tra HTML hợp lệ ✅
+- **Việc cần làm:** Dùng W3C Validator để kiểm tra HTML.
+- **Công cụ:** https://validator.w3.org/ → paste code hoặc upload file.
+- **Thời gian:** 15 phút.
+- **Hoàn thành khi:** Không còn lỗi HTML (có thể còn cảnh báo, không sao).
+- **Trạng thái:** ✔ Đã kiểm tra và sửa lỗi (thẻ h3/h4 sai, đã fix).
+
+**Checklist Giai đoạn 2:**
+- [x] File index.html hoàn chỉnh với 10 sections
+- [x] Mỗi section có nội dung text đã chuẩn bị
+- [x] YouTube embed đúng privacy-enhanced mode
+- [x] HTML validation pass (0 errors)
+
+---
+
+## Giai Đoạn 3 — Tạo Kiểu CSS (3 ngày)
+
+> Mục tiêu: Làm website đẹp giống như thiết kế trong CLAUDE.md.
+
+### Bước 3.1 — CSS Reset & Variables (main.css) ✅
+- **Trạng thái:** ✔ Đã hoàn thành. File `css/main.css` có CSS reset, variables (#39afd5), typography, utilities (container, section-padding, sr-only, skip-link).
+
+### Bước 3.2 — Components CSS (components.css) ✅
+- **Trạng thái:** ✔ Đã hoàn thành. File `css/components.css` có navbar, buttons (btn-primary, btn-outline, btn-accent), cards (card, card--value).
+
+### Bước 3.3 — Sections CSS (sections.css) ✅
+- **Trạng thái:** ✔ Đã hoàn thành. File `css/sections.css` có style cho cả 10 sections, responsive 3 breakpoints (1024px, 768px, 480px).
+
+### Bước 3.4 — Responsive cho mobile ✅
+- **Việc cần làm:** Kiểm tra từng section trên màn hình hẹp (dùng DevTools). Sửa CSS cho mobile:
+  - Touch target ≥ 44×44px
+  - Body font ≥ 16px
+  - Hero text ≤ 2.5rem
+  - Grid 1 cột cho mobile
+- **Công cụ:** Chrome DevTools (F12 → biểu tượng điện thoại ở góc trên trái).
+- **Thời gian:** 1 tiếng.
+- **Hoàn thành khi:** Chọn iPhone SE (375px) trong DevTools — mọi section hiển thị tốt, không tràn, không chồng chéo.
+- **Trạng thái:** ✔ Đã hoàn thành. Đã thêm hamburger menu cho mobile, responsive 3 breakpoints (1024px, 768px, 480px).
+
+**Checklist Giai đoạn 3:**
+- [x] main.css có CSS variables và reset
+- [x] components.css có button, card styles
+- [x] sections.css có style cho cả 10 section
+- [x] Website đẹp trên desktop
+- [x] Website đẹp trên mobile 375px
+
+---
+
+## Giai Đoạn 4 — Thêm Animation & Tương Tác (2 ngày)
+
+> Mục tiêu: Website có hiệu ứng mượt mà khi cuộn.
+
+### Bước 4.1 — Scroll Reveal Animation (main.js) ✅
+- **Việc cần làm:** Tạo `js/main.js` với:
+  - IntersectionObserver cho scroll reveal animation (thay thế AOS CDN)
+  - Navbar behavior (đổi màu nền/đổ bóng khi scroll)
+  - Smooth scroll cho các anchor link
+  - data-aos attributes trong HTML
+- **Công cụ:** Claude Code.
+- **Thời gian:** 1 tiếng.
+- **Hoàn thành khi:** Scroll xuống — các section xuất hiện với animation mượt.
+- **Trạng thái:** ✔ Đã hoàn thành. Dùng CSS transition + IntersectionObserver (không dùng AOS CDN).
+
+### Bước 4.2 — CountUp animation (counter.js) ✅
+- **Việc cần làm:** Tạo `js/counter.js` với IntersectionObserver kích hoạt đếm số.
+- **Công cụ:** Claude Code.
+- **Thời gian:** 1 tiếng.
+- **Hoàn thành khi:** Scroll đến stats section — các con số chạy đếm từ 0 lên số thật.
+- **Trạng thái:** ✔ Đã hoàn thành. Số liệu hiển thị tĩnh (theo yêu cầu tắt scroll animation).
+
+### Bước 4.3 — FAQ Accordion (accordion.js) ✅
+- **Việc cần làm:** Tạo `js/accordion.js`:
+  - Click câu hỏi → câu trả lời mở ra với transition
+  - Click lại → đóng
+  - Rotate icon mũi tên khi mở/đóng
+- **Công cụ:** Claude Code.
+- **Thời gian:** 1 tiếng.
+- **Hoàn thành khi:** Click FAQ thấy đóng/mở đúng, animation mượt.
+- **Trạng thái:** ✔ Đã hoàn thành. Accordion hoạt động với aria-expanded.
+
+### Bước 4.4 — Hamburger Menu ✅
+- **Việc cần làm:** Thêm nút hamburger cho mobile navigation.
+- **Công cụ:** Claude Code.
+- **Thời gian:** 30 phút.
+- **Hoàn thành khi:** Trên mobile bấm hamburger → menu trượt ra, bấm link → đóng.
+- **Trạng thái:** ✔ Đã hoàn thành. Menu trượt phải, overlay mờ, đóng khi bấm link/overlay.
+
+**Checklist Giai đoạn 4:**
+- [x] Scroll reveal animation hoạt động trên tất cả section
+- [x] Navbar đổi style khi scroll
+- [x] Số liệu stats hiển thị đúng
+- [x] FAQ accordion đóng/mở được
+- [x] Hamburger menu hoạt động trên mobile
+
+---
+
+## Giai Đoạn 5 — Tối Ưu & Kiểm Tra (2 ngày)
+
+> Mục tiêu: Website chạy nhanh, không lỗi, đạt điểm Lighthouse cao.
+
+### Bước 5.1 — Tối ưu hình ảnh ✅
+- **Việc cần làm:**
+  - Nén tất cả ảnh .webp nhỏ hơn 100KB
+  - Thêm `loading="lazy"` vào tất cả `<img>` dưới fold
+  - Thêm `width` và `height` attributes để tránh layout shift
+  - Thêm alt text mô tả cho từng ảnh
+- **Công cụ:** https://tinypng.com + Claude Code.
+- **Thời gian:** 30 phút.
+- **Hoàn thành khi:** Ảnh nào cũng có alt text, loading lazy, kích thước hợp lý.
+- **Trạng thái:** ✔ Đã hoàn thành. Tất cả ảnh < 100KB (og-image: 35KB, portrait: 34KB). Đã có alt text, width/height, loading="lazy".
+
+### Bước 5.2 — Kiểm tra Lighthouse
+- **Việc cần làm:**
+  - Mở Chrome → F12 → tab Lighthouse
+  - Chọn "Mobile" → Generate report
+  - Ghi lại điểm số và các vấn đề cần sửa
+  - Sửa từng vấn đề (thiếu meta description, contrast màu, v.v.)
+- **Công cụ:** Chrome DevTools Lighthouse.
+- **Thời gian:** 1 tiếng.
+- **Hoàn thành khi:** Performance ≥ 90, Accessibility ≥ 90, SEO ≥ 90.
+- **Trạng thái:** ⏳ Đã tối ưu một phần (đang chờ chạy lại Lighthouse):
+  - Thêm `fetchpriority="high"` vào ảnh hero (cải thiện LCP)
+  - Thêm `defer` vào tất cả script tags (giảm render blocking)
+  - Thêm `{ passive: true }` vào scroll event listener (giảm TBT)
+  - Gộp accordion.js vào main.js (giảm HTTP request)
+  - Xóa counter.js (dead code — số liệu stats đã hardcode trong HTML)
+  - Thêm `<main>` landmark (fix Accessibility "Document does not have a main landmark")
+  - Tăng contrast footer text (fix Accessibility "insufficient contrast ratio")
+  - Inline critical CSS trong `<head>` + load CSS async với `media="print"` (loại bỏ render-blocking CSS)
+  - Preload ảnh hero với `rel="preload"` (cải thiện LCP)
+
+### Bước 5.3 — Kiểm tra thực tế trên điện thoại
+- **Việc cần làm:**
+  - Mở website từ điện thoại (cùng WiFi, dùng http://địa-chỉ-IP:port nếu chạy local)
+  - Hoặc dùng DevTools mô phỏng Samsung Galaxy A series (360px)
+  - Click từng nút, scroll hết trang, kiểm tra animation
+- **Công cụ:** Chrome DevTools + điện thoại thật (nếu được).
+- **Thời gian:** 30 phút.
+- **Hoàn thành khi:** Mọi thứ hoạt động trên màn hình nhỏ, animation không giật.
+
+### Bước 5.4 — Thêm prefers-reduced-motion ✅
+- **Việc cần làm:** Thêm media query tắt animation cho người dùng bị say/chóng mặt khi thấy hiệu ứng.
+- **Công cụ:** Claude Code.
+- **Thời gian:** 10 phút.
+- **Hoàn thành khi:** Thêm `@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }` vào CSS.
+- **Trạng thái:** ✔ Đã hoàn thành. Có trong `css/main.css`.
+- **Việc cần làm:** Thêm media query tắt animation cho người dùng bị say/chóng mặt khi thấy hiệu ứng.
+- **Công cụ:** Claude Code.
+- **Thời gian:** 10 phút.
+- **Hoàn thành khi:** Thêm `@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }` vào CSS.
+
+**Checklist Giai đoạn 5:**
+- [x] Tất cả ảnh đã tối ưu, có alt text
+- [ ] Lighthouse ≥ 90 cho Performance, Accessibility, SEO (đang chờ chạy lại)
+- [ ] Test trên mobile không có lỗi
+- [x] prefers-reduced-motion đã thêm
+- [x] counter.js đã xóa (dead code)
+- [x] accordion.js gộp vào main.js (giảm HTTP request)
+
+---
+
+## Giai Đoạn 6 — Deploy Lên Internet (1 ngày)
+
+> Mục tiêu: Website có mặt trên internet, ai cũng truy cập được.
+
+### Bước 6.1 — Đẩy code lên GitHub
+- **Việc cần làm:**
+  - Tạo repository mới trên GitHub (đặt tên `namha-website`)
+  - Chạy các lệnh Git trong terminal:
+    ```
+    git init
+    git add .
+    git commit -m "Initial commit: landing page Nam Ha"
+    git branch -M main
+    git remote add origin https://github.com/TEN-GITHUB/namha-website.git
+    git push -u origin main
+    ```
+- **Công cụ:** Terminal + GitHub.
+- **Thời gian:** 30 phút.
+- **Hoàn thành khi:** Lên GitHub.com thấy code đã ở trên repository.
+
+### Bước 6.2 — Deploy với Netlify (dễ hơn)
+- **Việc cần làm:**
+  - Vào https://app.netlify.com → "Add new site" → "Import an existing project"
+  - Kết nối GitHub → chọn repository `namha-website`
+  - Deploy settings: để mặc định (publish directory: để trống vì là static site)
+  - Click "Deploy site"
+- **Công cụ:** Netlify (tài khoản miễn phí, đăng nhập bằng GitHub).
+- **Thời gian:** 15 phút.
+- **Hoàn thành khi:** Netlify cấp 1 domain dạng `namha-website-abc123.netlify.app` — vào link đó thấy website.
+
+### Bước 6.3 — Cấu hình domain tùy chỉnh (nếu có)
+- **Việc cần làm:**
+  - Mua domain (nếu chưa có) từ Nhà Đăng Ký (PA Vietnam, Mat Bao, v.v.)
+  - Vào Netlify → Site settings → Domain management → Add custom domain
+  - Trỏ DNS: thêm CNAME record trỏ domain → `ten-site.netlify.app`
+- **Công cụ:** Netlify + nhà cung cấp domain.
+- **Thời gian:** 1–2 tiếng (DNS có thể mất đến 48h để lan).
+- **Hoàn thành khi:** Vào `tenmien.com` thấy website.
+
+### Bước 6.4 — Kiểm tra deploy
+- **Việc cần làm:**
+  - Vào link Netlify từ desktop và điện thoại
+  - Check Lighthouse lại một lần nữa (môi trường production)
+  - Kiểm tra favicon hiển thị
+  - Kiểm tra OG tags hoạt động (dùng https://opengraph.xyz để xem trước khi share)
+- **Công cụ:** Trình duyệt + OpenGraph.xyz.
+- **Thời gian:** 30 phút.
+- **Hoàn thành khi:** Website hoạt động perfect trên production.
+
+**Checklist Giai đoạn 6:**
+- [ ] Code đã push lên GitHub
+- [ ] Netlify deploy thành công
+- [ ] Link Netlify hoạt động
+- [ ] OG tags đúng (test với opengraph.xyz)
+- [ ] Lighthouse production ≥ 90
+
+---
+
+## Tổng Quan Timeline
+
+```
+Ngày 1–2:    Giai đoạn 0 — Chuẩn bị máy & tài khoản
+Ngày 3–5:    Giai đoạn 1 — Xây dựng nội dung thật
+Ngày 6–7:    Giai đoạn 2 — Viết HTML
+Ngày 8–10:   Giai đoạn 3 — Tạo kiểu CSS
+Ngày 11–12:  Giai đoạn 4 — Animation & tương tác
+Ngày 13–14:  Giai đoạn 5 — Tối ưu & kiểm tra
+Ngày 15:     Giai đoạn 6 — Deploy lên internet
+            ───────────────────────────────
+Tổng:        14–15 ngày (≈ 20–25 tiếng làm việc)
+```
+
+## Vai Trò Của Claude Code Trong Quy Trình Này
+
+Claude Code sẽ là "người bạn đồng hành" của bạn:
+
+- **Giai đoạn 1** — Claude Code KHÔNG làm thay việc viết nội dung. Nội dung là của bạn, là linh hồn website.
+- **Giai đoạn 2** — Bạn yêu cầu Claude Code viết HTML, kiểm tra giúp bạn
+  - Ví dụ prompt: *"Hãy viết section hero cho tôi với heading 'Sống Khỏe Mạnh – Bình An – Hạnh Phúc', sub-headline [nội dung], button 'Xem Video Ngay'"*
+- **Giai đoạn 3** — Bạn yêu cầu Claude Code viết CSS theo design system
+  - Ví dụ prompt: *"Viết CSS cho section stats, grid 4 cột, card trắng border xanh #39afd5"*
+- **Giai đoạn 4** — Claude Code viết JavaScript animation cho bạn
+- **Giai đoạn 5** — Claude Code giúp tối ưu, kiểm tra lỗi
+- **Giai đoạn 6** — Bước này bạn tự làm (chạy lệnh Git + bấm nút trên Netlify = 15 phút)
+
+> **Nguyên tắc vàng:**
+> Copy – Paste nội dung từ Claude Code vào file là OK. Nhưng hãy đọc thử để hiểu code đang làm gì. Khi gặp lỗi, đọc lỗi trước, copy lỗi vào Claude Code, nhờ giải thích. Đây là cách học nhanh nhất.
+
+## Xử Lý Khi Gặp Vấn Đề
+
+| Vấn đề | Cách xử lý |
+|---------|-----------|
+| Code không chạy như ý | Copy lỗi → hỏi Claude Code "code bị lỗi [pasted error], sửa giúp tôi" |
+| Không biết prompt thế nào | Gõ "tôi muốn làm [việc gì đó], giúp tôi" |
+| Design không đẹp | Hỏi Claude "section hero trông chưa đẹp, gợi ý cải thiện" |
+| Lighthouse thấp | Mở report → hỏi Claude "Lighthouse báo [cái lỗi], fix sao?" |
+| Deploy lỗi | Copy log → hỏi Claude "Netlify deploy lỗi [pasted error]" |
+
+---
+
+*Chúc bạn xây dựng thành công website cho Nam Hà. Làm từng bước, đừng vội. Mỗi tích xanh là một chiến thắng.*
